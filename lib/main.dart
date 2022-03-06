@@ -1,4 +1,3 @@
-import 'package:dot_navigation_bar/dot_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:nike_store_app/screens/find_screen.dart';
 import 'package:nike_store_app/screens/like_screen.dart';
@@ -11,24 +10,6 @@ void main() {
   runApp(Home());
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MediaQuery(data: MediaQueryData(), child: MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MediaQuery(
-        data: MediaQueryData(),
-        child: Home(),
-      )
-    ));
-  }
-}
 
 class Home extends StatefulWidget {
   @override
@@ -50,11 +31,19 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return MediaQuery(data: MediaQueryData(), child: Scaffold(
-        body: _screens.elementAt(_selectedIndex),
-
-        bottomNavigationBar: const BottomNavBar()
-    ));
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: Scaffold(
+          extendBody: true,
+          body: _screens.elementAt(_selectedIndex),
+          bottomNavigationBar: const BottomNavBar()
+      ),
+    );
   }
 }
 

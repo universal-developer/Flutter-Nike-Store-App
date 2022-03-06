@@ -12,29 +12,218 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return MediaQuery(data: MediaQueryData(), child: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height * 0.4,
-        padding: EdgeInsets.only(top: 40),
-        child: Scaffold(
-          appBar: AppBar(
-              backgroundColor: Color(0xffFAFAFA),
-              elevation: 0,
-              shadowColor: Colors.white,
-              title: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(CupertinoIcons.command, color: Colors.black),
-                  Image.asset('assets/nike_logo.png'),
-                  Icon(CupertinoIcons.shopping_cart, color: Colors.black),
-                ],
-              )
-          ),
-          body: const Center(
+    return Container(
+      padding: EdgeInsets.only(top: 40),
+      child: Scaffold(
+        extendBody: true,
+        appBar: AppBar(
+            backgroundColor: Color(0xffFAFAFA),
+            elevation: 0,
+            shadowColor: Colors.white,
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  icon: const Icon(CupertinoIcons.command, color: Colors.black, size: 30),
+                  onPressed: () {},
+                ),
+                const Image(image: AssetImage('assets/nike_logo.png'), width: 100),
 
-              child: Text('Home Screen')
-          ),
-        )
-    ));
+                IconButton(
+                  icon: const Icon(CupertinoIcons.shopping_cart, color: Colors.black, size: 30),
+                  onPressed: () {},
+                ),
+              ],
+            )
+        ),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.only(top: 20),
+                      width: 350,
+                      child: TextFormField(
+                        keyboardType: TextInputType.emailAddress,
+                        style: const TextStyle(
+                            fontSize: 16, color: Colors.black),
+                        decoration: const InputDecoration(
+                          suffixIcon: Icon(CupertinoIcons.search, color: Colors.black45, size: 25),
+                          filled: true,
+                          labelText: 'Search...',
+                          hintText: 'New foots for example',
+                          hintStyle: TextStyle(color: Colors.grey),
+                          labelStyle: TextStyle(color: Colors.grey),
+                          contentPadding: EdgeInsets.symmetric(
+                              vertical: 0.0, horizontal: 20.0),
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white, width: 1.0),
+                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white, width: 1.0),
+                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                          ),
+                          errorBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white, width: 1.0),
+                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white, width: 1.0),
+                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 20),
+                Row(
+                  children: const [
+                    Text('Newly Arrived', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold))
+                  ],
+                ),
+                const SizedBox(height: 20),
+                InkWell(
+                  onTap: () {},
+                  child: Stack(
+                    children: [
+                      Image.asset('assets/nike_image_foot.png'),
+                      Container(
+                          padding: const EdgeInsets.only(left: 20, top: 20),
+                          child: const Text('Air Force 1', style: TextStyle(
+                              fontSize: 25, color: Colors.white
+                          ),)
+                      ),
+                      Container(
+                          padding: const EdgeInsets.only(left: 20, top: 50),
+                          child: const Text('249\$', style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white
+                          ),)
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: IconButton(
+                              icon: const Icon(CupertinoIcons.plus_app_fill, color: Colors.white, size: 40),
+                              onPressed: () {},
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 20),
+                InkWell(
+                  onTap: () {},
+                  child: Stack(
+                    children: [
+                      Image.asset('assets/nike_image_foor-2.png'),
+                      Container(
+                          padding: const EdgeInsets.only(left: 20, top: 20),
+                          child: const Text('Air Max 1', style: TextStyle(
+                              fontSize: 25, color: Colors.white
+                          ),)
+                      ),
+                      Container(
+                          padding: const EdgeInsets.only(left: 20, top: 50),
+                          child: const Text('199\$', style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white
+                          ),)
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: IconButton(
+                              icon: const Icon(CupertinoIcons.plus_app_fill, color: Colors.white, size: 40),
+                              onPressed: () {},
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 20),
+                InkWell(
+                  onTap: () {},
+                  child: Stack(
+                    children: [
+                      Image.asset('assets/nike_image_foot.png'),
+                      Container(
+                          padding: const EdgeInsets.only(left: 20, top: 20),
+                          child: const Text('Air Force 1', style: TextStyle(
+                              fontSize: 25, color: Colors.white
+                          ),)
+                      ),
+                      Container(
+                          padding: const EdgeInsets.only(left: 20, top: 50),
+                          child: const Text('249\$', style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white
+                          ),)
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: IconButton(
+                              icon: const Icon(CupertinoIcons.plus_app_fill, color: Colors.white, size: 40),
+                              onPressed: () {},
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 20),
+                InkWell(
+                  onTap: () {},
+                  child: Stack(
+                    children: [
+                      Image.asset('assets/nike_image_foor-2.png'),
+                      Container(
+                          padding: const EdgeInsets.only(left: 20, top: 20),
+                          child: const Text('Air Max 1', style: TextStyle(
+                              fontSize: 25, color: Colors.white
+                          ),)
+                      ),
+                      Container(
+                          padding: const EdgeInsets.only(left: 20, top: 50),
+                          child: const Text('199\$', style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white
+                          ),)
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: IconButton(
+                              icon: const Icon(CupertinoIcons.plus_app_fill, color: Colors.white, size: 40),
+                              onPressed: () {},
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          )
+        ),
+      ),
+    );
   }
 }

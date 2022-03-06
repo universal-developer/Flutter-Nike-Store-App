@@ -32,41 +32,35 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: _screens.elementAt(_selectedIndex),
-      bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(bottom: 10),
-        child: DotNavigationBar(
-          margin: const EdgeInsets.only(left: 10, right: 10),
-          currentIndex: _selectedIndex,
-          dotIndicatorColor: Colors.white,
-          unselectedItemColor: Colors.grey[300],
-          onTap: _onItemTapped,
-          items: [
-            /// Home
-            DotNavigationBarItem(
-              icon: const Icon(Icons.home),
-              selectedColor: Colors.black,
-            ),
+      bottomNavigationBar: DotNavigationBar(
+        currentIndex: _selectedIndex,
+        dotIndicatorColor: Colors.white,
+        unselectedItemColor: Colors.grey[300],
+        onTap: _onItemTapped,
+        items: [
+          DotNavigationBarItem(
+            icon: const Icon(Icons.home),
+            selectedColor: Colors.black,
+          ),
 
-            /// Likes
-            DotNavigationBarItem(
-              icon: const Icon(Icons.search),
-              selectedColor: Colors.black,
-            ),
+          /// Likes
+          DotNavigationBarItem(
+            icon: const Icon(Icons.search),
+            selectedColor: Colors.black,
+          ),
 
-            /// Search
-            DotNavigationBarItem(
-              icon: const Icon(Icons.favorite),
-              selectedColor: Colors.black,
-            ),
+          DotNavigationBarItem(
+            icon: const Icon(Icons.favorite),
+            selectedColor: Colors.black,
+          ),
 
-            /// Profile
-            DotNavigationBarItem(
-              icon: const Icon(Icons.person),
-              selectedColor: Colors.black,
-            ),
-          ],
-        ),
+          DotNavigationBarItem(
+            icon: const Icon(Icons.person),
+            selectedColor: Colors.black,
+          ),
+        ],
       ),
     );
   }

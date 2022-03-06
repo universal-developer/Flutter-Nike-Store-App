@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:nike_store_app/components/bottom_navbar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,11 +12,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 40),
+      padding: const EdgeInsets.only(top: 40),
       child: Scaffold(
         extendBody: true,
         appBar: AppBar(
-            backgroundColor: Color(0xffFAFAFA),
+            backgroundColor: const Color(0xffFAFAFA),
             elevation: 0,
             shadowColor: Colors.white,
             title: Row(
@@ -38,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
                 Row(

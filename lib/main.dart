@@ -7,18 +7,20 @@ import 'package:nike_store_app/components/bottom_navbar.dart';
 
 
 void main() {
-  runApp(Home());
+  runApp(const Home());
 }
 
 
 class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
+
   @override
   _HomeState createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
 
-  int _selectedIndex = 0;
+  final int _selectedIndex = 0;
 
   final _screens = const [
     HomeScreen(),

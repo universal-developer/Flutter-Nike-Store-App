@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:nike_store_app/screens/choosing_complectation.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -24,7 +25,9 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 IconButton(
                   icon: const Icon(CupertinoIcons.command, color: Colors.black, size: 30),
-                  onPressed: () {},
+                  onPressed: () {
+
+                  },
                 ),
                 const Image(image: AssetImage('assets/nike_logo.png'), width: 100),
 
@@ -88,7 +91,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(height: 20),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ChoosingComplectationScreen()));
+                  },
                   child: Stack(
                     children: [
                       Image.asset('assets/nike_image_foot.png'),
@@ -111,7 +116,9 @@ class _HomeScreenState extends State<HomeScreen> {
                             padding: const EdgeInsets.only(top: 10),
                             child: IconButton(
                               icon: const Icon(CupertinoIcons.plus_app_fill, color: Colors.white, size: 40),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => const ChoosingComplectationScreen()));
+                              },
                             ),
                           )
                         ],
@@ -121,7 +128,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(height: 20),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ChoosingComplectationScreen()));
+                  },
                   child: Stack(
                     children: [
                       Image.asset('assets/nike_image_foor-2.png'),
@@ -144,7 +153,9 @@ class _HomeScreenState extends State<HomeScreen> {
                             padding: const EdgeInsets.only(top: 10),
                             child: IconButton(
                               icon: const Icon(CupertinoIcons.plus_app_fill, color: Colors.white, size: 40),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => const ChoosingComplectationScreen()));
+                              },
                             ),
                           )
                         ],
@@ -154,7 +165,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(height: 20),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ChoosingComplectationScreen()));
+                  },
                   child: Stack(
                     children: [
                       Image.asset('assets/nike_image_foot.png'),
@@ -177,7 +190,9 @@ class _HomeScreenState extends State<HomeScreen> {
                             padding: const EdgeInsets.only(top: 10),
                             child: IconButton(
                               icon: const Icon(CupertinoIcons.plus_app_fill, color: Colors.white, size: 40),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => const ChoosingComplectationScreen()));
+                              },
                             ),
                           )
                         ],
@@ -187,7 +202,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(height: 20),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ChoosingComplectationScreen()));
+                  },
                   child: Stack(
                     children: [
                       Image.asset('assets/nike_image_foor-2.png'),
@@ -210,7 +227,9 @@ class _HomeScreenState extends State<HomeScreen> {
                             padding: const EdgeInsets.only(top: 10),
                             child: IconButton(
                               icon: const Icon(CupertinoIcons.plus_app_fill, color: Colors.white, size: 40),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => const ChoosingComplectationScreen()));
+                              },
                             ),
                           )
                         ],

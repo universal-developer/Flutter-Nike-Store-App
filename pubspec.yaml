@@ -64,6 +64,7 @@ flutter:
     - assets/nike_image_foot.png
     - assets/nike_image_foor-2.png
     - assets/nike_image_foot-3.png
+    - assets/nike_for_choosing.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

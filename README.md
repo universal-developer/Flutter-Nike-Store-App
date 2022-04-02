@@ -1,16 +1,18 @@
-# nike_store_app
+<h1>Flutter Nike Shop App</h1>
 
-A new Flutter project.
+<h2>Screens: </h2>
 
-## Getting Started
+<img src="images/first.PNG"/>
+<img src="images/second.PNG"/>
+<img src="images/third.PNG"/>
 
-This project is a starting point for a Flutter application.
+<h2>Usage: </h2>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```bash
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+git clone https://github.com/universal-developer/flutter_nike_store_app.git
+
+flutter run flutter_nike_store_app
+
+```

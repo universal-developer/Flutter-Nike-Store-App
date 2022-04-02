@@ -5,11 +5,9 @@ import 'package:nike_store_app/screens/profile_screen.dart';
 import 'package:nike_store_app/screens/home_screen.dart';
 import 'package:nike_store_app/components/bottom_navbar.dart';
 
-
 void main() {
   runApp(const Home());
 }
-
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -19,7 +17,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   final int _selectedIndex = 0;
 
   final _screens = const [
@@ -28,8 +25,6 @@ class _HomeState extends State<Home> {
     LikeScreen(),
     ProfileScreen(),
   ];
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -43,9 +38,7 @@ class _HomeState extends State<Home> {
       home: Scaffold(
           extendBody: true,
           body: _screens.elementAt(_selectedIndex),
-          bottomNavigationBar: const BottomNavBar()
-      ),
+          bottomNavigationBar: const BottomNavBar()),
     );
   }
 }
-

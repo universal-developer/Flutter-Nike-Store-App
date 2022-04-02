@@ -1,9 +1,9 @@
 import 'package:dot_navigation_bar/dot_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:nike_store_app/screens/find_screen.dart';
-import 'package:nike_store_app/screens/like_screen.dart';
 import 'package:nike_store_app/screens/profile_screen.dart';
 import 'package:nike_store_app/screens/home_screen.dart';
+import 'package:nike_store_app/screens/find_screen.dart';
+import 'package:nike_store_app/screens/like_screen.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);
@@ -13,7 +13,6 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
-
   int _selectedIndex = 0;
 
   final _screens = const [
@@ -65,4 +64,3 @@ class _BottomNavBarState extends State<BottomNavBar> {
     );
   }
 }
-

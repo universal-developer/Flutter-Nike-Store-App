@@ -2,9 +2,9 @@
 
 <h2>Screens: </h2>
 
-<img src="images/first.PNG"/>
-<img src="images/second.PNG"/>
-<img src="images/third.PNG"/>
+<img src="images/first.PNG" height="150px"/>
+<img src="images/second.PNG" height="150px"/>
+<img src="images/third.PNG" height="150px"/>
 
 <h2>Usage: </h2>
 

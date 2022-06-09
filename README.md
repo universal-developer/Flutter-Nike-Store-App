@@ -9,12 +9,20 @@
 
 ```bash
 
-git clone https://github.com/universal-developer/flutter_nike_store_app.git
+git clone https://github.com/universal-developer/flutter-Nike-Store-App.git
 
-cd flutter_nike_store_app
+cd Flutter-Nike-Store-App
 
 flutter pub get
 
 flutter run
+
+```
+
+<h2>Link on template: </h2>
+
+```bash
+
+https://www.figma.com/file/R943gks6lNByhI1GgWX7QZ/Nike-Shoes-App---UI-Design-(Community)?node-id=0%3A1
 
 ```
